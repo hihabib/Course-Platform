@@ -221,9 +221,9 @@ export function AccessCourse() {
           onComplete={() => {
             toggleVideoComplete(currentVideo.id)
 
-            setTimeout(() => {
-              navigate(`/course/${currentCourse.id}/video/${parseInt(currentVideo.id) + 1}`);
-            }, 3000);
+            // setTimeout(() => {
+            //   navigate(`/course/${currentCourse.id}/video/${parseInt(currentVideo.id) + 1}`);
+            // }, 3000);
           }}
           isBookmarked={courseProgress.bookmarkedVideos.includes(currentVideo.id)}
           isCompleted={courseProgress.completedVideos.includes(currentVideo.id)}
