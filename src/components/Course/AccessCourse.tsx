@@ -2,30 +2,13 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Card } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
+import { Course, CourseProgress, Video } from "@/types";
 import { BookmarkIcon, CheckCircleIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import VideoPlayer from "./VideoPlayer";
-import { Video } from "@/types";
 
 
-
-interface Chapter {
-  chapter: string;
-  videos: Video[];
-}
-
-interface Course {
-  id: string;
-  title: string;
-  thumbnailUrl: string;
-  courseContent: Chapter[];
-}
-
-interface CourseProgress {
-  completedVideos: string[];
-  bookmarkedVideos: string[];
-}
 
 export function AccessCourse() {
   const [currentCourse, setCurrentCourse] = useState<Course | null>(null);
@@ -235,7 +218,13 @@ export function AccessCourse() {
       {currentVideo && (
         <VideoPlayer
           video={currentVideo}
-          onComplete={() => toggleVideoComplete(currentVideo.id)}
+          onComplete={() => {
+            toggleVideoComplete(currentVideo.id)
+
+            setTimeout(() => {
+              navigate(`/course/${currentCourse.id}/video/${parseInt(currentVideo.id) + 1}`);
+            }, 3000);
+          }}
           isBookmarked={courseProgress.bookmarkedVideos.includes(currentVideo.id)}
           isCompleted={courseProgress.completedVideos.includes(currentVideo.id)}
           onToggleBookmark={() => toggleBookmark(currentVideo.id)}

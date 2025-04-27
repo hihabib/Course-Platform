@@ -12,9 +12,15 @@ import {
 import { BookmarkIcon, XCircleIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { BookmarkedVideo, Course, STORAGE_KEYS } from "@/types";
+import { 
+  BookmarkedVideo, 
+  Course, 
+  STORAGE_KEYS, 
+  LocalStorageData,
+  BookmarkedVideosDrawerProps 
+} from "@/types";
 
-export function BookmarkedVideosDrawer() {
+export function BookmarkedVideosDrawer({ onClose }: BookmarkedVideosDrawerProps) {
   const [bookmarkedVideos, setBookmarkedVideos] = useState<BookmarkedVideo[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -24,11 +30,10 @@ export function BookmarkedVideosDrawer() {
     const progressData = localStorage.getItem(storageKey);
     
     if (progressData) {
-      const progress = JSON.parse(progressData);
-      progress.bookmarkedVideos = progress.bookmarkedVideos.filter((id: string) => id !== videoId);
+      const progress: LocalStorageData = JSON.parse(progressData);
+      progress.bookmarkedVideos = progress.bookmarkedVideos.filter(id => id !== videoId);
       localStorage.setItem(storageKey, JSON.stringify(progress));
       
-      // Update the UI
       setBookmarkedVideos(prev => 
         prev.filter(video => !(video.courseId === courseId && video.videoId === videoId))
       );
@@ -62,7 +67,7 @@ export function BookmarkedVideosDrawer() {
           if (!progressData) return;
           
           try {
-            const progress = JSON.parse(progressData);
+            const progress: LocalStorageData = JSON.parse(progressData);
             const course = courses.find(c => c.id === courseId);
 
             if (course && Array.isArray(progress.bookmarkedVideos)) {
@@ -109,7 +114,7 @@ export function BookmarkedVideosDrawer() {
   }, []);
 
   return (
-    <Drawer>
+    <Drawer onOpenChange={onClose}>
       <DrawerTrigger asChild>
         <Button variant="ghost" size="icon" className="relative">
           <BookmarkIcon className="h-5 w-5" />
@@ -174,6 +179,7 @@ export function BookmarkedVideosDrawer() {
     </Drawer>
   );
 }
+
 
 
 

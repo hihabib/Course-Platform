@@ -1,1 +1,295 @@
-[]
+[
+  {
+    "id": "the-ultimate-html5-css3-series-part-1",
+    "title": "The Ultimate HTML5 & CSS3 Series Part 1",
+    "thumbnailUrl": "/courses/The Ultimate HTML5 & CSS3 Series Part 1/thumbnail.jpg",
+    "courseContent": [
+      {
+        "chapter": "1. Getting Started (3m)",
+        "videos": [
+          {
+            "id": "1",
+            "title": "1- Introduction",
+            "duration": "0:53",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/1. Getting Started (3m)/1. 1- Introduction                                  (0_53).mp4"
+          },
+          {
+            "id": "2",
+            "title": "2- Who This Course Is For",
+            "duration": "0:37",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/1. Getting Started (3m)/2. 2- Who This Course Is For                                  (0_37).mp4"
+          },
+          {
+            "id": "3",
+            "title": "3- What You Need",
+            "duration": "1:31",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/1. Getting Started (3m)/3. 3- What You Need                                  (1_31).mp4"
+          }
+        ]
+      },
+      {
+        "chapter": "2. Web Development Fundamentals (36m)",
+        "videos": [
+          {
+            "id": "7",
+            "title": "1- Introduction",
+            "duration": "1:02",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/7. 1- Introduction                                  (1_02).mp4"
+          },
+          {
+            "id": "8",
+            "title": "2- Languages and Tools of Web Development",
+            "duration": "5:54",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/8. 2- Languages and Tools of Web Development                                  (5_54).mp4"
+          },
+          {
+            "id": "9",
+            "title": "3- How the Web Works",
+            "duration": "4:50",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/9. 3- How the Web Works                                  (4_50).mp4"
+          },
+          {
+            "id": "10",
+            "title": "4- Inspecting HTTP Requests and Responses",
+            "duration": "4:03",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/10. 4- Inspecting HTTP Requests and Responses                                  (4_03).mp4"
+          },
+          {
+            "id": "11",
+            "title": "5- HTML Basics",
+            "duration": "7:10",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/11. 5- HTML Basics                                  (7_10).mp4"
+          },
+          {
+            "id": "12",
+            "title": "6- CSS Basics",
+            "duration": "4:15",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/12. 6- CSS Basics                                  (4_15).mp4"
+          },
+          {
+            "id": "13",
+            "title": "7- Formatting Code",
+            "duration": "2:15",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/13. 7- Formatting Code                                  (2_15).mp4"
+          },
+          {
+            "id": "14",
+            "title": "8- Inspecting Pages Using DevTools",
+            "duration": "2:13",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/14. 8- Inspecting Pages Using DevTools                                  (2_13).mp4"
+          },
+          {
+            "id": "15",
+            "title": "9- Validating Web Pages",
+            "duration": "3:58",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/15. 9- Validating Web Pages                                  (3_58).mp4"
+          }
+        ]
+      },
+      {
+        "chapter": "3. HTML Basics (64m)",
+        "videos": [
+          {
+            "id": "17",
+            "title": "1- Introduction",
+            "duration": "0:42",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/17. 1- Introduction                                  (0_42).mp4"
+          },
+          {
+            "id": "18",
+            "title": "2- The Head Section",
+            "duration": "3:48",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/18. 2- The Head Section                                  (3_48).mp4"
+          },
+          {
+            "id": "19",
+            "title": "3- Text",
+            "duration": "6:40",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/19. 3- Text                                  (6_40).mp4"
+          },
+          {
+            "id": "20",
+            "title": "4- Entities",
+            "duration": "3:29",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/20. 4- Entities                                  (3_29).mp4"
+          },
+          {
+            "id": "21",
+            "title": "5- Hyperlinks",
+            "duration": "9:30",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/21. 5- Hyperlinks                                  (9_30).mp4"
+          },
+          {
+            "id": "22",
+            "title": "6- Images",
+            "duration": "5:37",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/22. 6- Images                                  (5_37).mp4"
+          },
+          {
+            "id": "23",
+            "title": "7- Video and Audio",
+            "duration": "5:40",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/23. 7- Video and Audio                                  (5_40).mp4"
+          },
+          {
+            "id": "24",
+            "title": "8- Lists",
+            "duration": "6:05",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/24. 8- Lists                                  (6_05).mp4"
+          },
+          {
+            "id": "25",
+            "title": "9- Tables",
+            "duration": "8:44",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/25. 9- Tables                                  (8_44).mp4"
+          },
+          {
+            "id": "26",
+            "title": "10- Containers",
+            "duration": "5:04",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/26. 10- Containers                                  (5_04).mp4"
+          },
+          {
+            "id": "27",
+            "title": "11- Semantic Elements",
+            "duration": "5:20",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/27. 11- Semantic Elements                                  (5_20).mp4"
+          },
+          {
+            "id": "28",
+            "title": "12- Structuring a Web Page",
+            "duration": "3:22",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/28. 12- Structuring a Web Page                                  (3_22).mp4"
+          }
+        ]
+      },
+      {
+        "chapter": "4. CSS Basics (69m)",
+        "videos": [
+          {
+            "id": "30",
+            "title": "1- Introduction",
+            "duration": "0:51",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/30. 1- Introduction                                  (0_51).mp4"
+          },
+          {
+            "id": "31",
+            "title": "2- Providing CSS",
+            "duration": "6:06",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/31. 2- Providing CSS                                  (6_06).mp4"
+          },
+          {
+            "id": "32",
+            "title": "3- Normalizing CSS",
+            "duration": "2:58",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/32. 3- Normalizing CSS                                  (2_58).mp4"
+          },
+          {
+            "id": "33",
+            "title": "4- Basic Selectors",
+            "duration": "4:56",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/33. 4- Basic Selectors                                  (4_56).mp4"
+          },
+          {
+            "id": "34",
+            "title": "5- Relational Selectors",
+            "duration": "5:20",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/34. 5- Relational Selectors                                  (5_20).mp4"
+          },
+          {
+            "id": "35",
+            "title": "6- Pseudo-class Selectors",
+            "duration": "9:06",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/35. 6- Pseudo-class Selectors                                  (9_06).mp4"
+          },
+          {
+            "id": "36",
+            "title": "7- Pseudo-element Selectors",
+            "duration": "4:42",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/36. 7- Pseudo-element Selectors                                  (4_42).mp4"
+          },
+          {
+            "id": "37",
+            "title": "8- Selectors Specificty",
+            "duration": "8:01",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/37. 8- Selectors Specificty                                  (8_01).mp4"
+          },
+          {
+            "id": "38",
+            "title": "9- Inheritance",
+            "duration": "2:43",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/38. 9- Inheritance                                  (2_43).mp4"
+          },
+          {
+            "id": "39",
+            "title": "10- Colors",
+            "duration": "6:48",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/39. 10- Colors                                  (6_48).mp4"
+          },
+          {
+            "id": "40",
+            "title": "11- Gradients",
+            "duration": "6:06",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/40. 11- Gradients                                  (6_06).mp4"
+          },
+          {
+            "id": "41",
+            "title": "12- Borders",
+            "duration": "5:46",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/41. 12- Borders                                  (5_46).mp4"
+          },
+          {
+            "id": "42",
+            "title": "13- Shadows",
+            "duration": "4:25",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/42. 13- Shadows                                  (4_25).mp4"
+          },
+          {
+            "id": "45",
+            "title": "16- What's Next",
+            "duration": "0:39",
+            "completed": false,
+            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/45. 16- What's Next                                  (0_39).mp4"
+          }
+        ]
+      }
+    ]
+  }
+]
