@@ -1,292 +1,938 @@
 [
   {
-    "id": "the-ultimate-html5-css3-series-part-1",
-    "title": "The Ultimate HTML5 & CSS3 Series Part 1",
-    "thumbnailUrl": "/courses/The Ultimate HTML5 & CSS3 Series Part 1/thumbnail.jpg",
+    "id": "the-ultimate-typescript-course",
+    "title": "The Ultimate TypeScript Course",
+    "thumbnailUrl": "/courses/The Ultimate TypeScript Course/thumbnail.jpg",
     "courseContent": [
       {
-        "chapter": "1. Getting Started (3m)",
+        "chapter": "1. Welcome (2m)",
         "videos": [
           {
             "id": "1",
-            "title": "1- Introduction",
-            "duration": "0:53",
+            "title": "1- Welcome",
+            "duration": "0:52",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/1. Getting Started (3m)/1. 1- Introduction                                  (0_53).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/1. Welcome (2m)/1. 1- Welcome                                  (0_52).mp4",
+            "type": "video"
           },
           {
             "id": "2",
-            "title": "2- Who This Course Is For",
-            "duration": "0:37",
+            "title": "2- Prerequisites",
+            "duration": "0:36",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/1. Getting Started (3m)/2. 2- Who This Course Is For                                  (0_37).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/1. Welcome (2m)/2. 2- Prerequisites                                  (0_36).mp4",
+            "type": "video"
           },
           {
             "id": "3",
-            "title": "3- What You Need",
-            "duration": "1:31",
+            "title": "3- How to Take this Course",
+            "duration": "0:55",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/1. Getting Started (3m)/3. 3- What You Need                                  (1_31).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/1. Welcome (2m)/3. 3- How to Take this Course                                  (0_55).mp4",
+            "type": "video"
           }
         ]
       },
       {
-        "chapter": "2. Web Development Fundamentals (36m)",
+        "chapter": "2. Getting Started with TypeScript (20m)",
         "videos": [
           {
             "id": "7",
             "title": "1- Introduction",
-            "duration": "1:02",
+            "duration": "0:31",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/7. 1- Introduction                                  (1_02).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/2. Getting Started with TypeScript (20m)/7. 1- Introduction                                  (0_31).mp4",
+            "type": "video"
           },
           {
             "id": "8",
-            "title": "2- Languages and Tools of Web Development",
-            "duration": "5:54",
+            "title": "2- What is TypeScript",
+            "duration": "4:41",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/8. 2- Languages and Tools of Web Development                                  (5_54).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/2. Getting Started with TypeScript (20m)/8. 2- What is TypeScript                                  (4_41).mp4",
+            "type": "video"
           },
           {
             "id": "9",
-            "title": "3- How the Web Works",
-            "duration": "4:50",
+            "title": "3- Setting Up the Development Environment",
+            "duration": "1:51",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/9. 3- How the Web Works                                  (4_50).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/2. Getting Started with TypeScript (20m)/9. 3- Setting Up the Development Environment                                  (1_51).mp4",
+            "type": "video"
           },
           {
             "id": "10",
-            "title": "4- Inspecting HTTP Requests and Responses",
-            "duration": "4:03",
+            "title": "4- Your First TypeScript Program",
+            "duration": "3:50",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/10. 4- Inspecting HTTP Requests and Responses                                  (4_03).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/2. Getting Started with TypeScript (20m)/10. 4- Your First TypeScript Program                                  (3_50).mp4",
+            "type": "video"
           },
           {
             "id": "11",
-            "title": "5- HTML Basics",
-            "duration": "7:10",
+            "title": "5- Configuring the TypeScript Compiler",
+            "duration": "4:03",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/11. 5- HTML Basics                                  (7_10).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/2. Getting Started with TypeScript (20m)/11. 5- Configuring the TypeScript Compiler                                  (4_03).mp4",
+            "type": "video"
           },
           {
             "id": "12",
-            "title": "6- CSS Basics",
-            "duration": "4:15",
+            "title": "6- Debugging TypeScript Applications",
+            "duration": "4:53",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/12. 6- CSS Basics                                  (4_15).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/2. Getting Started with TypeScript (20m)/12. 6- Debugging TypeScript Applications                                  (4_53).mp4",
+            "type": "video"
           },
           {
             "id": "13",
-            "title": "7- Formatting Code",
-            "duration": "2:15",
+            "title": "7 - Summary.pdf",
+            "duration": "",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/13. 7- Formatting Code                                  (2_15).mp4"
-          },
+            "path": "/public/courses/The Ultimate TypeScript Course/2. Getting Started with TypeScript (20m)/13. 7 - Summary.pdf",
+            "type": "pdf"
+          }
+        ]
+      },
+      {
+        "chapter": "3. Fundamentals (25m)",
+        "videos": [
           {
             "id": "14",
-            "title": "8- Inspecting Pages Using DevTools",
-            "duration": "2:13",
+            "title": "1- Introduction",
+            "duration": "0:28",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/14. 8- Inspecting Pages Using DevTools                                  (2_13).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/14. 1- Introduction                                  (0_28).mp4",
+            "type": "video"
           },
           {
             "id": "15",
-            "title": "9- Validating Web Pages",
-            "duration": "3:58",
+            "title": "2- Built-in Types",
+            "duration": "1:58",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/2. Web Development Fundamentals (36m)/15. 9- Validating Web Pages                                  (3_58).mp4"
-          }
-        ]
-      },
-      {
-        "chapter": "3. HTML Basics (64m)",
-        "videos": [
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/15. 2- Built-in Types                                  (1_58).mp4",
+            "type": "video"
+          },
+          {
+            "id": "16",
+            "title": "3- The any Type",
+            "duration": "2:45",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/16. 3- The any Type                                  (2_45).mp4",
+            "type": "video"
+          },
           {
             "id": "17",
-            "title": "1- Introduction",
-            "duration": "0:42",
+            "title": "4- Strict Compiler Option.pdf",
+            "duration": "",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/17. 1- Introduction                                  (0_42).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/17. 4- Strict Compiler Option.pdf",
+            "type": "pdf"
           },
           {
             "id": "18",
-            "title": "2- The Head Section",
-            "duration": "3:48",
+            "title": "5- Arrays",
+            "duration": "2:18",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/18. 2- The Head Section                                  (3_48).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/18. 5- Arrays                                  (2_18).mp4",
+            "type": "video"
           },
           {
             "id": "19",
-            "title": "3- Text",
-            "duration": "6:40",
+            "title": "6- Tuples",
+            "duration": "2:43",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/19. 3- Text                                  (6_40).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/19. 6- Tuples                                  (2_43).mp4",
+            "type": "video"
           },
           {
             "id": "20",
-            "title": "4- Entities",
-            "duration": "3:29",
+            "title": "7- Enums",
+            "duration": "3:23",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/20. 4- Entities                                  (3_29).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/20. 7- Enums                                  (3_23).mp4",
+            "type": "video"
           },
           {
             "id": "21",
-            "title": "5- Hyperlinks",
-            "duration": "9:30",
+            "title": "8- Functions",
+            "duration": "6:51",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/21. 5- Hyperlinks                                  (9_30).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/21. 8- Functions                                  (6_51).mp4",
+            "type": "video"
           },
           {
             "id": "22",
-            "title": "6- Images",
-            "duration": "5:37",
+            "title": "9- Objects",
+            "duration": "4:34",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/22. 6- Images                                  (5_37).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/22. 9- Objects                                  (4_34).mp4",
+            "type": "video"
           },
           {
             "id": "23",
-            "title": "7- Video and Audio",
-            "duration": "5:40",
+            "title": "10- Summary.pdf",
+            "duration": "",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/23. 7- Video and Audio                                  (5_40).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/23. 10- Summary.pdf",
+            "type": "pdf"
           },
           {
             "id": "24",
-            "title": "8- Lists",
-            "duration": "6:05",
+            "title": "11- Exercises.pdf",
+            "duration": "",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/24. 8- Lists                                  (6_05).mp4"
-          },
-          {
-            "id": "25",
-            "title": "9- Tables",
-            "duration": "8:44",
-            "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/25. 9- Tables                                  (8_44).mp4"
-          },
-          {
-            "id": "26",
-            "title": "10- Containers",
-            "duration": "5:04",
-            "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/26. 10- Containers                                  (5_04).mp4"
-          },
-          {
-            "id": "27",
-            "title": "11- Semantic Elements",
-            "duration": "5:20",
-            "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/27. 11- Semantic Elements                                  (5_20).mp4"
-          },
-          {
-            "id": "28",
-            "title": "12- Structuring a Web Page",
-            "duration": "3:22",
-            "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/3. HTML Basics (64m)/28. 12- Structuring a Web Page                                  (3_22).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/3. Fundamentals (25m)/24. 11- Exercises.pdf",
+            "type": "pdf"
           }
         ]
       },
       {
-        "chapter": "4. CSS Basics (69m)",
+        "chapter": "4. Advanced Types (26m)",
         "videos": [
           {
-            "id": "30",
+            "id": "25",
             "title": "1- Introduction",
-            "duration": "0:51",
+            "duration": "0:29",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/30. 1- Introduction                                  (0_51).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/25. 1- Introduction                                  (0_29).mp4",
+            "type": "video"
+          },
+          {
+            "id": "26",
+            "title": "2- Type Aliases",
+            "duration": "1:38",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/26. 2- Type Aliases                                  (1_38).mp4",
+            "type": "video"
+          },
+          {
+            "id": "27",
+            "title": "3- Union Types",
+            "duration": "2:36",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/27. 3- Union Types                                  (2_36).mp4",
+            "type": "video"
+          },
+          {
+            "id": "28",
+            "title": "4- Intersection Types",
+            "duration": "2:03",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/28. 4- Intersection Types                                  (2_03).mp4",
+            "type": "video"
+          },
+          {
+            "id": "29",
+            "title": "5- Literal Types",
+            "duration": "1:45",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/29. 5- Literal Types                                  (1_45).mp4",
+            "type": "video"
+          },
+          {
+            "id": "30",
+            "title": "6- Nullable Types",
+            "duration": "2:36",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/30. 6- Nullable Types                                  (2_36).mp4",
+            "type": "video"
           },
           {
             "id": "31",
-            "title": "2- Providing CSS",
-            "duration": "6:06",
+            "title": "7- Optional Chaining",
+            "duration": "4:41",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/31. 2- Providing CSS                                  (6_06).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/31. 7- Optional Chaining                                  (4_41).mp4",
+            "type": "video"
           },
           {
             "id": "32",
-            "title": "3- Normalizing CSS",
-            "duration": "2:58",
+            "title": "8- The Nullish Coaelscing Operator",
+            "duration": "1:59",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/32. 3- Normalizing CSS                                  (2_58).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/32. 8- The Nullish Coaelscing Operator                                  (1_59).mp4",
+            "type": "video"
           },
           {
             "id": "33",
-            "title": "4- Basic Selectors",
-            "duration": "4:56",
+            "title": "9- Type Assertions",
+            "duration": "3:07",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/33. 4- Basic Selectors                                  (4_56).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/33. 9- Type Assertions                                  (3_07).mp4",
+            "type": "video"
           },
           {
             "id": "34",
-            "title": "5- Relational Selectors",
-            "duration": "5:20",
+            "title": "10- The unknown Type",
+            "duration": "2:24",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/34. 5- Relational Selectors                                  (5_20).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/34. 10- The unknown Type                                  (2_24).mp4",
+            "type": "video"
           },
           {
             "id": "35",
-            "title": "6- Pseudo-class Selectors",
-            "duration": "9:06",
+            "title": "11- The never Type",
+            "duration": "2:59",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/35. 6- Pseudo-class Selectors                                  (9_06).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/35. 11- The never Type                                  (2_59).mp4",
+            "type": "video"
           },
           {
             "id": "36",
-            "title": "7- Pseudo-element Selectors",
-            "duration": "4:42",
+            "title": "12- Summary.pdf",
+            "duration": "",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/36. 7- Pseudo-element Selectors                                  (4_42).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/36. 12- Summary.pdf",
+            "type": "pdf"
           },
           {
             "id": "37",
-            "title": "8- Selectors Specificty",
-            "duration": "8:01",
+            "title": "13- Exercises.pdf",
+            "duration": "",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/37. 8- Selectors Specificty                                  (8_01).mp4"
-          },
+            "path": "/public/courses/The Ultimate TypeScript Course/4. Advanced Types (26m)/37. 13- Exercises.pdf",
+            "type": "pdf"
+          }
+        ]
+      },
+      {
+        "chapter": "5. Classes, Interfaces and Object-oriented Programming (55m)",
+        "videos": [
           {
             "id": "38",
-            "title": "9- Inheritance",
-            "duration": "2:43",
+            "title": "1- Introduction",
+            "duration": "0:51",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/38. 9- Inheritance                                  (2_43).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/38. 1- Introduction                                  (0_51).mp4",
+            "type": "video"
           },
           {
             "id": "39",
-            "title": "10- Colors",
-            "duration": "6:48",
+            "title": "2- What is Object-oriented Programming",
+            "duration": "3:34",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/39. 10- Colors                                  (6_48).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/39. 2- What is Object-oriented Programming                                  (3_34).mp4",
+            "type": "video"
           },
           {
             "id": "40",
-            "title": "11- Gradients",
-            "duration": "6:06",
+            "title": "3- Creating Classes",
+            "duration": "3:55",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/40. 11- Gradients                                  (6_06).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/40. 3- Creating Classes                                  (3_55).mp4",
+            "type": "video"
           },
           {
             "id": "41",
-            "title": "12- Borders",
-            "duration": "5:46",
+            "title": "4- Creating Objects",
+            "duration": "3:24",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/41. 12- Borders                                  (5_46).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/41. 4- Creating Objects                                  (3_24).mp4",
+            "type": "video"
           },
           {
             "id": "42",
-            "title": "13- Shadows",
-            "duration": "4:25",
+            "title": "5- Read-only and Optional Properties",
+            "duration": "1:44",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/42. 13- Shadows                                  (4_25).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/42. 5- Read-only and Optional Properties                                  (1_44).mp4",
+            "type": "video"
+          },
+          {
+            "id": "43",
+            "title": "6- Access Control Keywords",
+            "duration": "3:42",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/43. 6- Access Control Keywords                                  (3_42).mp4",
+            "type": "video"
+          },
+          {
+            "id": "44",
+            "title": "7- Parameter Properties",
+            "duration": "1:58",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/44. 7- Parameter Properties                                  (1_58).mp4",
+            "type": "video"
           },
           {
             "id": "45",
-            "title": "16- What's Next",
-            "duration": "0:39",
+            "title": "8- Getters and Setters",
+            "duration": "2:26",
             "completed": false,
-            "path": "/public/courses/The Ultimate HTML5 & CSS3 Series Part 1/4. CSS Basics (69m)/45. 16- What's Next                                  (0_39).mp4"
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/45. 8- Getters and Setters                                  (2_26).mp4",
+            "type": "video"
+          },
+          {
+            "id": "46",
+            "title": "9- Index Signatures",
+            "duration": "3:08",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/46. 9- Index Signatures                                  (3_08).mp4",
+            "type": "video"
+          },
+          {
+            "id": "47",
+            "title": "10- Static Members",
+            "duration": "4:58",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/47. 10- Static Members                                  (4_58).mp4",
+            "type": "video"
+          },
+          {
+            "id": "48",
+            "title": "11- Inheritance",
+            "duration": "4:49",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/48. 11- Inheritance                                  (4_49).mp4",
+            "type": "video"
+          },
+          {
+            "id": "49",
+            "title": "12- Method Overriding",
+            "duration": "3:50",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/49. 12- Method Overriding                                  (3_50).mp4",
+            "type": "video"
+          },
+          {
+            "id": "50",
+            "title": "13- Polymorphism",
+            "duration": "5:13",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/50. 13- Polymorphism                                  (5_13).mp4",
+            "type": "video"
+          },
+          {
+            "id": "51",
+            "title": "14- Private vs Protected Members",
+            "duration": "1:33",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/51. 14- Private vs Protected Members                                  (1_33).mp4",
+            "type": "video"
+          },
+          {
+            "id": "52",
+            "title": "15- Abstract Classes and Methods",
+            "duration": "4:06",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/52. 15- Abstract Classes and Methods                                  (4_06).mp4",
+            "type": "video"
+          },
+          {
+            "id": "53",
+            "title": "16- Interfaces",
+            "duration": "6:44",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/53. 16- Interfaces                                  (6_44).mp4",
+            "type": "video"
+          },
+          {
+            "id": "54",
+            "title": "17- Interfaces vs Types.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/54. 17- Interfaces vs Types.pdf",
+            "type": "pdf"
+          },
+          {
+            "id": "55",
+            "title": "18- Summary.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/55. 18- Summary.pdf",
+            "type": "pdf"
+          },
+          {
+            "id": "56",
+            "title": "19- Exercises.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/5. Classes, Interfaces and Object-oriented Programming (55m)/56. 19- Exercises.pdf",
+            "type": "pdf"
+          }
+        ]
+      },
+      {
+        "chapter": "6. Generics (29m)",
+        "videos": [
+          {
+            "id": "57",
+            "title": "1- Introduction",
+            "duration": "0:24",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/57. 1- Introduction                                  (0_24).mp4",
+            "type": "video"
+          },
+          {
+            "id": "58",
+            "title": "2- Understanding the Problem",
+            "duration": "2:05",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/58. 2- Understanding the Problem                                  (2_05).mp4",
+            "type": "video"
+          },
+          {
+            "id": "59",
+            "title": "3- Generic Classes",
+            "duration": "2:52",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/59. 3- Generic Classes                                  (2_52).mp4",
+            "type": "video"
+          },
+          {
+            "id": "60",
+            "title": "4- Generic Functions",
+            "duration": "1:58",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/60. 4- Generic Functions                                  (1_58).mp4",
+            "type": "video"
+          },
+          {
+            "id": "61",
+            "title": "5- Generic Interfaces",
+            "duration": "3:22",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/61. 5- Generic Interfaces                                  (3_22).mp4",
+            "type": "video"
+          },
+          {
+            "id": "62",
+            "title": "6- Generic Constraints",
+            "duration": "2:22",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/62. 6- Generic Constraints                                  (2_22).mp4",
+            "type": "video"
+          },
+          {
+            "id": "63",
+            "title": "7- Extending Generic Classes",
+            "duration": "6:56",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/63. 7- Extending Generic Classes                                  (6_56).mp4",
+            "type": "video"
+          },
+          {
+            "id": "64",
+            "title": "8- The keyof Operator",
+            "duration": "3:39",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/64. 8- The keyof Operator                                  (3_39).mp4",
+            "type": "video"
+          },
+          {
+            "id": "65",
+            "title": "9- Type Mapping",
+            "duration": "5:02",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/65. 9- Type Mapping                                  (5_02).mp4",
+            "type": "video"
+          },
+          {
+            "id": "66",
+            "title": "10- Summary.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/66. 10- Summary.pdf",
+            "type": "pdf"
+          },
+          {
+            "id": "67",
+            "title": "11- Exercises.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/6. Generics (29m)/67. 11- Exercises.pdf",
+            "type": "pdf"
+          }
+        ]
+      },
+      {
+        "chapter": "7. Decorators (29m)",
+        "videos": [
+          {
+            "id": "68",
+            "title": "1- Introduction",
+            "duration": "0:29",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/68. 1- Introduction                                  (0_29).mp4",
+            "type": "video"
+          },
+          {
+            "id": "69",
+            "title": "2- What Are Decorators",
+            "duration": "1:39",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/69. 2- What Are Decorators                                  (1_39).mp4",
+            "type": "video"
+          },
+          {
+            "id": "70",
+            "title": "3- Class Decorators",
+            "duration": "4:00",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/70. 3- Class Decorators                                  (4_00).mp4",
+            "type": "video"
+          },
+          {
+            "id": "71",
+            "title": "4- Parameterized Decorators",
+            "duration": "2:12",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/71. 4- Parameterized Decorators                                  (2_12).mp4",
+            "type": "video"
+          },
+          {
+            "id": "72",
+            "title": "5- Decorator Composition",
+            "duration": "1:22",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/72. 5- Decorator Composition                                  (1_22).mp4",
+            "type": "video"
+          },
+          {
+            "id": "73",
+            "title": "6- Method Decorators",
+            "duration": "7:02",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/73. 6- Method Decorators                                  (7_02).mp4",
+            "type": "video"
+          },
+          {
+            "id": "74",
+            "title": "7- Accessor Decorators - Title",
+            "duration": "4:44",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/74. 7- Accessor Decorators - Title                                  (4_44).mp4",
+            "type": "video"
+          },
+          {
+            "id": "75",
+            "title": "8- Property Decorators",
+            "duration": "4:59",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/75. 8- Property Decorators                                  (4_59).mp4",
+            "type": "video"
+          },
+          {
+            "id": "76",
+            "title": "9- Parameter Decorators",
+            "duration": "2:22",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/76. 9- Parameter Decorators                                  (2_22).mp4",
+            "type": "video"
+          },
+          {
+            "id": "77",
+            "title": "10- Summary.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/77. 10- Summary.pdf",
+            "type": "pdf"
+          },
+          {
+            "id": "78",
+            "title": "11- Exercises.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/7. Decorators (29m)/78. 11- Exercises.pdf",
+            "type": "pdf"
+          }
+        ]
+      },
+      {
+        "chapter": "8. Modules (16m)",
+        "videos": [
+          {
+            "id": "79",
+            "title": "1- Introduction",
+            "duration": "0:35",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/8. Modules (16m)/79. 1- Introduction                                  (0_35).mp4",
+            "type": "video"
+          },
+          {
+            "id": "80",
+            "title": "2- Exporting and Importing",
+            "duration": "4:20",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/8. Modules (16m)/80. 2- Exporting and Importing                                  (4_20).mp4",
+            "type": "video"
+          },
+          {
+            "id": "81",
+            "title": "3- Module Formats",
+            "duration": "3:19",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/8. Modules (16m)/81. 3- Module Formats                                  (3_19).mp4",
+            "type": "video"
+          },
+          {
+            "id": "82",
+            "title": "4- Default Exports",
+            "duration": "2:58",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/8. Modules (16m)/82. 4- Default Exports                                  (2_58).mp4",
+            "type": "video"
+          },
+          {
+            "id": "83",
+            "title": "5- Wildcard Imports",
+            "duration": "0:57",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/8. Modules (16m)/83. 5- Wildcard Imports                                  (0_57).mp4",
+            "type": "video"
+          },
+          {
+            "id": "84",
+            "title": "6- Re-exporting",
+            "duration": "3:15",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/8. Modules (16m)/84. 6- Re-exporting                                  (3_15).mp4",
+            "type": "video"
+          },
+          {
+            "id": "85",
+            "title": "7- Summary.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/8. Modules (16m)/85. 7- Summary.pdf",
+            "type": "pdf"
+          }
+        ]
+      },
+      {
+        "chapter": "9. Integration with JavaScript (12m)",
+        "videos": [
+          {
+            "id": "86",
+            "title": "1- Introduction",
+            "duration": "0:34",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/9. Integration with JavaScript (12m)/86. 1- Introduction                                  (0_34).mp4",
+            "type": "video"
+          },
+          {
+            "id": "87",
+            "title": "2- Including JS Code in TS Projects",
+            "duration": "2:18",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/9. Integration with JavaScript (12m)/87. 2- Including JS Code in TS Projects                                  (2_18).mp4",
+            "type": "video"
+          },
+          {
+            "id": "88",
+            "title": "3- Type Checking JS Code",
+            "duration": "2:16",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/9. Integration with JavaScript (12m)/88. 3- Type Checking JS Code                                  (2_16).mp4",
+            "type": "video"
+          },
+          {
+            "id": "89",
+            "title": "4- Describing Types Using JSDoc",
+            "duration": "2:10",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/9. Integration with JavaScript (12m)/89. 4- Describing Types Using JSDoc                                  (2_10).mp4",
+            "type": "video"
+          },
+          {
+            "id": "90",
+            "title": "5- Creating Declaration Files",
+            "duration": "2:20",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/9. Integration with JavaScript (12m)/90. 5- Creating Declaration Files                                  (2_20).mp4",
+            "type": "video"
+          },
+          {
+            "id": "91",
+            "title": "6- Using Definitely Typed Declaration Files",
+            "duration": "2:32",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/9. Integration with JavaScript (12m)/91. 6- Using Definitely Typed Declaration Files                                  (2_32).mp4",
+            "type": "video"
+          },
+          {
+            "id": "92",
+            "title": "7- Summary.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/9. Integration with JavaScript (12m)/92. 7- Summary.pdf",
+            "type": "pdf"
+          }
+        ]
+      },
+      {
+        "chapter": "10. React with TypeScript (30m)",
+        "videos": [
+          {
+            "id": "93",
+            "title": "1- Introduction",
+            "duration": "0:28",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/93. 1- Introduction                                  (0_28).mp4",
+            "type": "video"
+          },
+          {
+            "id": "94",
+            "title": "2- Creating a React App with TypeScript",
+            "duration": "1:28",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/94. 2- Creating a React App with TypeScript                                  (1_28).mp4",
+            "type": "video"
+          },
+          {
+            "id": "95",
+            "title": "3- Adding Bootstrap",
+            "duration": "1:34",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/95. 3- Adding Bootstrap                                  (1_34).mp4",
+            "type": "video"
+          },
+          {
+            "id": "96",
+            "title": "4- Creating a Component - Title",
+            "duration": "5:11",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/96. 4- Creating a Component - Title                                  (5_11).mp4",
+            "type": "video"
+          },
+          {
+            "id": "97",
+            "title": "5- Using the State Hook",
+            "duration": "2:09",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/97. 5- Using the State Hook                                  (2_09).mp4",
+            "type": "video"
+          },
+          {
+            "id": "98",
+            "title": "6- Calling the Backend",
+            "duration": "4:17",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/98. 6- Calling the Backend                                  (4_17).mp4",
+            "type": "video"
+          },
+          {
+            "id": "99",
+            "title": "7- Using the Effect Hook",
+            "duration": "2:08",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/99. 7- Using the Effect Hook                                  (2_08).mp4",
+            "type": "video"
+          },
+          {
+            "id": "100",
+            "title": "8- Handling Events",
+            "duration": "3:41",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/100. 8- Handling Events                                  (3_41).mp4",
+            "type": "video"
+          },
+          {
+            "id": "101",
+            "title": "9- Building a Form",
+            "duration": "3:34",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/101. 9- Building a Form                                  (3_34).mp4",
+            "type": "video"
+          },
+          {
+            "id": "102",
+            "title": "10- Handling Form Submission",
+            "duration": "4:51",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/102. 10- Handling Form Submission                                  (4_51).mp4",
+            "type": "video"
+          },
+          {
+            "id": "103",
+            "title": "11- Additional Reading.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/10. React with TypeScript (30m)/103. 11- Additional Reading.pdf",
+            "type": "pdf"
+          }
+        ]
+      },
+      {
+        "chapter": "11. Node and Express with TypeScript (20m)",
+        "videos": [
+          {
+            "id": "104",
+            "title": "1- Introduction",
+            "duration": "0:32",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/11. Node and Express with TypeScript (20m)/104. 1- Introduction                                  (0_32).mp4",
+            "type": "video"
+          },
+          {
+            "id": "105",
+            "title": "2- Executing TypeScript Code with Node",
+            "duration": "2:39",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/11. Node and Express with TypeScript (20m)/105. 2- Executing TypeScript Code with Node                                  (2_39).mp4",
+            "type": "video"
+          },
+          {
+            "id": "106",
+            "title": "3- Setting up an Express Project",
+            "duration": "3:13",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/11. Node and Express with TypeScript (20m)/106. 3- Setting up an Express Project                                  (3_13).mp4",
+            "type": "video"
+          },
+          {
+            "id": "107",
+            "title": "4- Creating a Basic Route",
+            "duration": "0:56",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/11. Node and Express with TypeScript (20m)/107. 4- Creating a Basic Route                                  (0_56).mp4",
+            "type": "video"
+          },
+          {
+            "id": "108",
+            "title": "5- Creating a Router",
+            "duration": "1:48",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/11. Node and Express with TypeScript (20m)/108. 5- Creating a Router                                  (1_48).mp4",
+            "type": "video"
+          },
+          {
+            "id": "109",
+            "title": "6- Parsing Request Bodies",
+            "duration": "3:36",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/11. Node and Express with TypeScript (20m)/109. 6- Parsing Request Bodies                                  (3_36).mp4",
+            "type": "video"
+          },
+          {
+            "id": "110",
+            "title": "7- Building an API",
+            "duration": "3:47",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/11. Node and Express with TypeScript (20m)/110. 7- Building an API                                  (3_47).mp4",
+            "type": "video"
+          }
+        ]
+      },
+      {
+        "chapter": "12. Course Wrap Up",
+        "videos": [
+          {
+            "id": "111",
+            "title": "Course Summary.pdf",
+            "duration": "",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/12. Course Wrap Up/111. Course Summary.pdf",
+            "type": "pdf"
+          },
+          {
+            "id": "112",
+            "title": "Course Wrap Up",
+            "duration": "0:24",
+            "completed": false,
+            "path": "/public/courses/The Ultimate TypeScript Course/12. Course Wrap Up/112. Course Wrap Up                                  (0_24).mp4",
+            "type": "video"
           }
         ]
       }

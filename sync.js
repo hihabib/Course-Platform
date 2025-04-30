@@ -33,25 +33,27 @@ function processSingleCourse(courseFolderPath) {
     const chapterPath = path.join(courseFolderPath, chapterName);
 
     const videos = fs.readdirSync(chapterPath, { withFileTypes: true })
-      .filter(dirent => dirent.isFile() && dirent.name.toLowerCase().endsWith('.mp4'))
+      .filter(dirent => dirent.isFile() && (dirent.name.toLowerCase().endsWith('.mp4') || dirent.name.toLowerCase().endsWith('.pdf')))
       .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }))
       .map(file => {
+        const fileType = file.name.toLowerCase().endsWith('.pdf') ? 'pdf' : 'video';
         const idMatch = file.name.match(/^(\d+)\./);
         const id = idMatch ? idMatch[1] : '';
 
         const titlePart = file.name
           .replace(/^(\d+\.\s*)?/, '') 
-          .replace(/\(.*\)\.mp4$/, '') 
+          .replace(/\(.*\)\.(mp4|pdf)$/i, '') 
           .trim();
 
-        const duration = parseDuration(file.name);
+        const duration = fileType === 'video' ? parseDuration(file.name) : '';
 
         return {
           id,
           title: titlePart,
           duration,
           completed: false,
-          path: `/public/courses/${courseTitle}/${chapterName}/${file.name}`
+          path: `/public/courses/${courseTitle}/${chapterName}/${file.name}`,
+          type: fileType
         };
       });
 

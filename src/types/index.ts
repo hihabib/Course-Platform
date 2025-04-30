@@ -24,11 +24,12 @@ export interface Chapter {
 export interface Video {
   id: string;
   title: string;
-  description: string;
+  description?: string;
   duration: string;
   path: string;
-  thumbnailUrl: string;
+  thumbnailUrl?: string;
   resources?: Resource[];
+  type: 'video' | 'pdf';
 }
 
 export interface Resource {
@@ -156,4 +157,5 @@ export interface LocalStorageData {
     timestamp: number;
   };
 }
+
 
