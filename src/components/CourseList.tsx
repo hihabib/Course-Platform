@@ -28,12 +28,12 @@ export function CourseList() {
 
   if (isLoading) {
     return (
-      <div className="container mx-auto p-6">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto p-4 md:p-6">
+        <div className="grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {[...Array(6)].map((_, i) => (
             <div
               key={i}
-              className="h-[300px] rounded-xl bg-card animate-pulse"
+              className="h-[250px] md:h-[300px] rounded-xl bg-card animate-pulse"
             />
           ))}
         </div>
@@ -43,7 +43,7 @@ export function CourseList() {
 
   if (error) {
     return (
-      <div className="container mx-auto p-6">
+      <div className="container mx-auto p-4 md:p-6">
         <div className="text-center text-destructive">
           <p>{error}</p>
         </div>
@@ -52,9 +52,9 @@ export function CourseList() {
   }
 
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="mb-6 text-3xl font-bold text-foreground">Available Courses</h1>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div className="container mx-auto p-4 md:p-6">
+      <h1 className="mb-4 md:mb-6 text-2xl md:text-3xl font-bold text-foreground">Available Courses</h1>
+      <div className="grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {courses.map((course) => (
           <CourseCard key={course.id} course={course} />
         ))}

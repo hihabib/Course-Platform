@@ -45,6 +45,11 @@ export function useCourseProgress(courseId: string) {
         JSON.stringify(newProgress)
       );
 
+      // Dispatch custom event to notify BookmarkedVideosDrawer
+      setTimeout(() => {
+        window.dispatchEvent(new Event('bookmarkChange'));
+      }, 0);
+
       return newProgress;
     });
   }, [courseId]);

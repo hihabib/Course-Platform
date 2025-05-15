@@ -5,7 +5,7 @@ import { CourseCardProps } from '@/types';
 export function CourseCard({ course }: CourseCardProps) {
   return (
     <Link to={`/course/${course.id}`}>
-      <Card className="overflow-hidden transition-all hover:shadow-lg">
+      <Card className="overflow-hidden transition-all hover:shadow-lg h-full">
         <CardHeader className="p-0">
           <div className="aspect-video overflow-hidden">
             <img
@@ -15,9 +15,9 @@ export function CourseCard({ course }: CourseCardProps) {
             />
           </div>
         </CardHeader>
-        <CardContent className="p-4">
-          <h3 className="text-lg font-semibold text-foreground">{course.title}</h3>
-          <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
+        <CardContent className="p-3 md:p-4">
+          <h3 className="text-base md:text-lg font-semibold text-foreground line-clamp-1">{course.title}</h3>
+          <p className="mt-1.5 md:mt-2 line-clamp-2 text-xs md:text-sm text-muted-foreground">
             {course.description}
           </p>
         </CardContent>

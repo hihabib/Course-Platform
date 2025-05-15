@@ -104,6 +104,11 @@ export function VideoPlayer({
         }}
       />
 
+      {/* Dark overlay when video is completed */}
+      {isCompleted && (
+        <div className="absolute inset-0 bg-black/60 transition-opacity duration-300" />
+      )}
+
       {/* Title overlay at the top - only visible when controls are visible */}
       <div
         className={cn(
@@ -133,7 +138,7 @@ export function VideoPlayer({
               e.stopPropagation();
               onNextVideo();
             }}
-            className="bg-black/40 hover:bg-black/60 rounded-full p-4 transition-colors group"
+            className="bg-black/60 hover:bg-black/80 rounded-full p-4 transition-colors group"
           >
             <div className="flex items-center gap-2">
               <SkipForwardIcon className="h-10 w-10 text-white" />

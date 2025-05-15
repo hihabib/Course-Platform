@@ -21,9 +21,9 @@ export function BookmarkedVideosDrawer({ onClose }: BookmarkedVideosDrawerProps)
     <Drawer onOpenChange={onClose}>
       <DrawerTrigger asChild>
         <Button variant="ghost" size="icon" className="relative">
-          <BookmarkIcon className="h-5 w-5" />
+          <BookmarkIcon className="h-4 w-4 md:h-5 md:w-5" />
           {bookmarkedVideos.length > 0 && (
-            <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-primary text-xs text-primary-foreground flex items-center justify-center">
+            <span className="absolute -top-1 -right-1 h-3.5 w-3.5 md:h-4 md:w-4 rounded-full bg-primary text-[10px] md:text-xs text-primary-foreground flex items-center justify-center">
               {bookmarkedVideos.length}
             </span>
           )}
@@ -47,7 +47,7 @@ export function BookmarkedVideosDrawer({ onClose }: BookmarkedVideosDrawerProps)
                 No bookmarked videos yet
               </p>
             ) : (
-              <div className="space-y-6">
+              <div className="space-y-4 md:space-y-6">
                 {bookmarkedVideos.map((video) => (
                   <div key={`${video.courseId}-${video.videoId}`} className="relative pt-2">
                     <button
@@ -55,15 +55,15 @@ export function BookmarkedVideosDrawer({ onClose }: BookmarkedVideosDrawerProps)
                       className="absolute -right-2 -top-1 z-10"
                       aria-label="Remove bookmark"
                     >
-                      <XCircleIcon className="h-5 w-5 text-muted-foreground bg-black rounded-full cursor-pointer hover:text-foreground transition-colors" />
+                      <XCircleIcon className="h-4 w-4 md:h-5 md:w-5 text-muted-foreground bg-black rounded-full cursor-pointer hover:text-foreground transition-colors" />
                     </button>
                     <Link
                       to={`/course/${video.courseId}/video/${video.videoId}`}
                       className="block"
                     >
-                      <div className="rounded-lg border p-3 hover:bg-accent transition-colors group cursor-pointer">
-                        <h4 className="font-medium text-white group-hover:text-black">{video.title}</h4>
-                        <p className="text-sm text-white/70 group-hover:text-black">
+                      <div className="rounded-lg border p-2.5 md:p-3 hover:bg-accent transition-colors group cursor-pointer">
+                        <h4 className="font-medium text-sm md:text-base text-white group-hover:text-black">{video.title}</h4>
+                        <p className="text-xs md:text-sm text-white/70 group-hover:text-black">
                           {video.courseName}
                         </p>
                       </div>

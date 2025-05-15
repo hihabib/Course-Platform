@@ -3,10 +3,12 @@ import { Card } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 import { Course, CourseProgress, Video } from "@/types";
-import { BookmarkIcon, CheckCircleIcon, FileIcon, PlayCircleIcon } from "lucide-react";
+import { BookmarkIcon, CheckCircleIcon, FileIcon, MenuIcon, PlayCircleIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { VideoContent } from "./VideoContent";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 
 export function AccessCourse() {
   const [currentCourse, setCurrentCourse] = useState<Course | null>(null);
@@ -191,6 +193,104 @@ export function AccessCourse() {
     return Math.round((completedSeconds / totalSeconds) * 100);
   };
 
+  const CourseContentSheet = () => (
+    <Sheet>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="icon" className="lg:hidden">
+          <MenuIcon className="h-5 w-5" />
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="left" className="w-full sm:w-[400px] p-0">
+        <SheetHeader className="p-4 border-b">
+          <SheetTitle>Course Content</SheetTitle>
+        </SheetHeader>
+        <ScrollArea className="h-[calc(100vh-4rem)]">
+          <div className="p-4">
+            <Accordion
+              type="multiple"
+              value={openChapters}
+              onValueChange={setOpenChapters}
+              className="w-full space-y-2"
+            >
+              {currentCourse?.courseContent.map((chapter, index) => (
+                <AccordionItem
+                  key={index}
+                  value={`chapter-${index}`}
+                  className="border-0"
+                >
+                  <AccordionTrigger className="text-sm hover:no-underline p-2 md:p-3 bg-[#252731] rounded-lg cursor-pointer">
+                    {chapter.chapter}
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="space-y-1 py-2">
+                      {chapter.videos.map((video) => (
+                        <div
+                          key={video.id}
+                          className="flex items-center gap-1 md:gap-2 w-full"
+                        >
+                          <button
+                            onClick={() => handleVideoSelect(video)}
+                            className={cn(
+                              "flex-1 p-2 md:p-2.5 text-left rounded-lg transition-colors text-sm",
+                              "hover:bg-primary/10",
+                              video.id === currentVideo?.id && "bg-primary/20",
+                              "flex items-center justify-between cursor-pointer"
+                            )}
+                          >
+                            <span className="flex items-start gap-1 md:gap-2">
+                              {video.type === 'video' ? (
+                                <PlayCircleIcon className="w-3.5 md:w-4 h-3.5 md:h-4 mt-0.5 text-indigo-500" />
+                              ) : (
+                                <FileIcon className="w-3.5 md:w-4 h-3.5 md:h-4 mt-0.5 text-rose-500" />
+                              )}
+                              <span className={cn(
+                                "flex-1",
+                                courseProgress.completedVideos.includes(video.id) ? "text-primary" : "text-foreground"
+                              )}>
+                                {video.title}
+                              </span>
+                            </span>
+                            <span className="text-xs text-muted-foreground ml-1 md:ml-2">
+                              {video?.duration}
+                            </span>
+                          </button>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              toggleBookmark(video.id);
+                            }}
+                            className={cn(
+                              "p-1 md:p-1.5 rounded-lg transition-colors",
+                              courseProgress.bookmarkedVideos.includes(video.id) ? "text-yellow-500" : "text-muted-foreground"
+                            )}
+                          >
+                            <BookmarkIcon className="w-3.5 md:w-4 h-3.5 md:h-4 cursor-pointer" />
+                          </button>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              toggleVideoComplete(video.id);
+                            }}
+                            className={cn(
+                              "p-1 md:p-1.5 rounded-lg transition-colors",
+                              courseProgress.completedVideos.includes(video.id) ? "text-green-500" : "text-muted-foreground"
+                            )}
+                          >
+                            <CheckCircleIcon className="w-3.5 md:w-4 h-3.5 md:h-4 cursor-pointer" />
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </ScrollArea>
+      </SheetContent>
+    </Sheet>
+  );
+
   if (isLoading || !currentCourse || !currentVideo) {
     return <div className="flex min-h-screen items-center justify-center">Loading...</div>;
   }
@@ -200,8 +300,95 @@ export function AccessCourse() {
   }
 
   return (
-    <div className="flex h-screen overflow-hidden bg-background">
-      <div className="w-[400px] bg-card border-r">
+    <div className="flex flex-col lg:flex-row h-[calc(100vh-3.5rem)] md:h-[calc(100vh-4rem)] overflow-hidden bg-background">
+      {/* Mobile Course Info */}
+      <div className="lg:hidden p-4 space-y-4">
+        <h2 className="text-xl font-semibold text-foreground">{currentCourse.title}</h2>
+        <div className="space-y-2">
+          <div className="flex items-center w-full p-2 rounded-lg bg-gradient-to-r from-primary/20 to-transparent border border-primary/10">
+            <div className="flex items-center justify-center h-8 w-8 rounded-full bg-primary/10 mr-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-4 w-4 text-primary"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <div className="text-xs font-medium text-white uppercase tracking-wide">Duration</div>
+              <div className="text-sm font-bold text-foreground">
+                {currentCourse.duration || formatDuration(calculateTotalDuration(currentCourse))}
+              </div>
+            </div>
+          </div>
+
+          {courseProgress.completedVideos.length > 0 && (
+            <>
+              <div className="flex items-center w-full p-2 rounded-lg bg-gradient-to-r from-green-500/20 to-transparent border border-green-500/10">
+                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-green-500/10 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-4 w-4 text-green-500"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <div className="text-xs font-medium text-white uppercase tracking-wide">Completed</div>
+                  <div className="text-sm font-bold text-foreground">
+                    {courseProgress.completedVideos.length}/{countTotalVideos(currentCourse)} lessons
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center w-full p-2 rounded-lg bg-gradient-to-r from-amber-500/20 to-transparent border border-amber-500/10">
+                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-amber-500/10 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-4 w-4 text-amber-500"
+                  >
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <div className="text-xs font-medium text-white uppercase tracking-wide">Progress</div>
+                  <div className="text-sm font-bold text-foreground">
+                    {(() => {
+                      const totalDuration = calculateTotalDuration(currentCourse);
+                      const completedDuration = calculateCompletedDuration(currentCourse, courseProgress.completedVideos);
+                      const progressPercentage = calculateProgressPercentage(completedDuration, totalDuration);
+                      return `${formatDuration(completedDuration)} (${progressPercentage}%)`;
+                    })()}
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+
+      {/* Desktop Sidebar */}
+      <div className="hidden lg:block w-[400px] bg-card border-r">
         <ScrollArea className="h-full">
           <Card className="rounded-none border-0 shadow-none">
             <div className="p-4 border-0">
@@ -353,6 +540,7 @@ export function AccessCourse() {
                                 "p-1.5 rounded-lg transition-colors",
                                 courseProgress.bookmarkedVideos.includes(video.id) ? "text-yellow-500" : "text-muted-foreground"
                               )}
+                              aria-label={courseProgress.bookmarkedVideos.includes(video.id) ? "Remove bookmark" : "Add bookmark"}
                             >
                               <BookmarkIcon className="w-4 h-4 cursor-pointer" />
                             </button>
@@ -380,15 +568,25 @@ export function AccessCourse() {
         </ScrollArea>
       </div>
 
-      <div className="flex-1">
-        {currentCourse && currentVideo && (
-          <VideoContent
-            course={currentCourse}
-            currentVideo={currentVideo}
-            onVideoSelect={handleVideoSelect}
-          />
-        )}
+      {/* Video Content */}
+      <div className="flex-1 flex flex-col">
+        <div className="flex-1 flex items-center justify-center px-4 lg:px-8">
+          {currentCourse && currentVideo && (
+            <div className="w-full max-w-[1200px]">
+              <VideoContent
+                course={currentCourse}
+                currentVideo={currentVideo}
+                onVideoSelect={handleVideoSelect}
+                courseProgress={courseProgress}
+                toggleBookmark={toggleBookmark}
+              />
+            </div>
+          )}
+        </div>
       </div>
+
+      {/* Mobile Course Content Sheet */}
+      <CourseContentSheet />
     </div>
   );
 }
