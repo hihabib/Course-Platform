@@ -25,3 +25,6 @@ dist-ssr
 
 # Course
 public/courses/*
+
+# allCourses.json
+src/allCourses.json
