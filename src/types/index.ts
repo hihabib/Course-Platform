@@ -74,7 +74,7 @@ export interface BookmarkedVideo {
 
 // Storage Keys type
 export const STORAGE_KEYS = {
-  courseProgress: (courseId: string) => `course_progress_${courseId}`,
+  courseProgress: (courseId: string) => `course-progress-${courseId}`,
   theme: 'theme',
 } as const;
 

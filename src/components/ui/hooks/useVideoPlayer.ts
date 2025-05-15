@@ -6,7 +6,6 @@ interface UseVideoPlayerProps {
   autoPlay?: boolean;
   initialVolume?: number;
   initialMuted?: boolean;
-  completionThreshold?: number;
   onComplete?: () => void;
 }
 
@@ -15,7 +14,6 @@ export function useVideoPlayer({
   autoPlay = true,
   initialVolume = 0.8,
   initialMuted = false,
-  completionThreshold = 0.9,
   onComplete
 }: UseVideoPlayerProps) {
   const playerRef = useRef<ReactPlayer>(null);
@@ -30,14 +28,20 @@ export function useVideoPlayer({
   const [seeking, setSeeking] = useState(false);
   const [controlsVisible, setControlsVisible] = useState(false);
   const [controlsTimeout, setControlsTimeout] = useState<NodeJS.Timeout | null>(null);
+  const [playbackRate, setPlaybackRate] = useState(1);
+  const [showPlaybackSpeedMenu, setShowPlaybackSpeedMenu] = useState(false);
+  const [isCompleted, setIsCompleted] = useState(false);
   const isInteractingWithControls = useRef(false);
+  const hasCompleted = useRef(false);
 
-  // Reset player state when video changes
+  // Reset player state when video changes or when seeking back
   useEffect(() => {
     setPlayed(0);
     setCurrentTime(0);
     setDuration(0);
     setPlaying(autoPlay);
+    setIsCompleted(false);
+    hasCompleted.current = false;
   }, [url, autoPlay]);
 
   // Format time in MM:SS format
@@ -160,9 +164,15 @@ export function useVideoPlayer({
       setPlayed(state.played);
       setCurrentTime(state.playedSeconds);
       
-      // Mark as completed when threshold reached
-      if (state.played >= completionThreshold && onComplete) {
+      // Mark as completed when video reaches the end
+      if (state.played >= 0.999 && onComplete && !hasCompleted.current) {
+        hasCompleted.current = true;
+        setIsCompleted(true);
         onComplete();
+      } else if (state.played < 0.999) {
+        // Reset completed state if not at the end
+        hasCompleted.current = false;
+        setIsCompleted(false);
       }
     }
   };
@@ -210,6 +220,12 @@ export function useVideoPlayer({
       const seekTo = parseFloat((e.target as HTMLInputElement).value);
       playerRef.current.seekTo(seekTo);
       setCurrentTime(seekTo * duration);
+      
+      // Reset completed state if seeking back
+      if (seekTo < 0.999) {
+        setIsCompleted(false);
+        hasCompleted.current = false;
+      }
     }
     
     // Reset the controls timeout
@@ -239,6 +255,18 @@ export function useVideoPlayer({
     setPlaying(prev => !prev);
   };
 
+  const togglePlaybackSpeedMenu = (e?: React.MouseEvent) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    setShowPlaybackSpeedMenu(prev => !prev);
+  };
+
+  const changePlaybackSpeed = (speed: number) => {
+    setPlaybackRate(speed);
+    setShowPlaybackSpeedMenu(false);
+  };
+
   return {
     // Refs
     playerRef,
@@ -253,6 +281,9 @@ export function useVideoPlayer({
     currentTime,
     fullscreen,
     controlsVisible,
+    playbackRate,
+    showPlaybackSpeedMenu,
+    isCompleted,
     
     // Handlers
     showControls,
@@ -267,6 +298,8 @@ export function useVideoPlayer({
     handleVolumeMouseDown,
     handleVolumeMouseUp,
     togglePlay,
+    togglePlaybackSpeedMenu,
+    changePlaybackSpeed,
     
     // Utilities
     formatTime,

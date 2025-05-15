@@ -2,10 +2,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { CourseProgress, STORAGE_KEYS } from '@/types';
 
 const defaultProgress: CourseProgress = {
-  currentChapter: '',
-  currentVideo: '',
+  completedVideos: [],
   bookmarkedVideos: [],
-  chapters: {},
 };
 
 export function useCourseProgress(courseId: string) {
@@ -51,20 +49,15 @@ export function useCourseProgress(courseId: string) {
     });
   }, [courseId]);
 
-  const markVideoComplete = useCallback((chapterId: string, videoId: string) => {
+  const markVideoComplete = useCallback((videoId: string) => {
     setProgress(prev => {
+      const newCompletedVideos = prev.completedVideos.includes(videoId)
+        ? prev.completedVideos
+        : [...prev.completedVideos, videoId];
+
       const newProgress = {
         ...prev,
-        chapters: {
-          ...prev.chapters,
-          [chapterId]: {
-            ...prev.chapters[chapterId],
-            [videoId]: {
-              ...prev.chapters[chapterId]?.[videoId],
-              completed: true,
-            },
-          },
-        },
+        completedVideos: newCompletedVideos,
       };
 
       localStorage.setItem(

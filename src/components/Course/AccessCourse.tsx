@@ -6,9 +6,7 @@ import { Course, CourseProgress, Video } from "@/types";
 import { BookmarkIcon, CheckCircleIcon, FileIcon, PlayCircleIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
-import VideoPlayer from "./ContentPlayer";
-
-
+import { VideoContent } from "./VideoContent";
 
 export function AccessCourse() {
   const [currentCourse, setCurrentCourse] = useState<Course | null>(null);
@@ -98,6 +96,9 @@ export function AccessCourse() {
         bookmarkedVideos: newBookmarkedVideos
       };
     });
+
+    // Dispatch custom event to notify BookmarkedVideosDrawer
+    window.dispatchEvent(new Event('bookmarkChange'));
   };
 
   const toggleVideoComplete = (videoId: string) => {
@@ -200,18 +201,18 @@ export function AccessCourse() {
 
   return (
     <div className="flex h-screen overflow-hidden bg-background">
-      <div className="w-1/4 bg-card">
+      <div className="w-[400px] bg-card border-r">
         <ScrollArea className="h-full">
           <Card className="rounded-none border-0 shadow-none">
             <div className="p-4 border-0">
               <div className="aspect-video mb-4 overflow-hidden rounded-lg">
                 <img
-                  src={currentCourse.thumbnailUrl}
-                  alt={currentCourse.title}
+                  src={currentCourse?.thumbnailUrl}
+                  alt={currentCourse?.title}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h2 className="text-lg font-semibold text-foreground">{currentCourse.title}</h2>
+              <h2 className="text-lg font-semibold text-foreground">{currentCourse?.title}</h2>
               <div className="mt-3 space-y-2">
                 <div className="flex items-center w-full p-3 rounded-lg bg-gradient-to-r from-primary/20 to-transparent border border-primary/10">
                   <div className="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 mr-3">
@@ -379,17 +380,15 @@ export function AccessCourse() {
         </ScrollArea>
       </div>
 
-      {currentVideo && (
-        <VideoPlayer
-          video={currentVideo}
-          onComplete={() => {
-            toggleVideoComplete(currentVideo.id)
-          }}
-          isBookmarked={courseProgress.bookmarkedVideos.includes(currentVideo.id)}
-          isCompleted={courseProgress.completedVideos.includes(currentVideo.id)}
-          onToggleBookmark={() => toggleBookmark(currentVideo.id)}
-        />
-      )}
+      <div className="flex-1">
+        {currentCourse && currentVideo && (
+          <VideoContent
+            course={currentCourse}
+            currentVideo={currentVideo}
+            onVideoSelect={handleVideoSelect}
+          />
+        )}
+      </div>
     </div>
   );
 }
