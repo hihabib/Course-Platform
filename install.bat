@@ -1,3 +1,3 @@
 @echo off
-npm i -g pnpm
+npm i -g pnpm && pnpm i
 pause
