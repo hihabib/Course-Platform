@@ -37,12 +37,14 @@ function processSingleCourse(courseFolderPath) {
       .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }))
       .map(file => {
         const fileType = file.name.toLowerCase().endsWith('.pdf') ? 'pdf' : 'video';
-        const idMatch = file.name.match(/^(\d+)\./);
-        const id = idMatch ? idMatch[1] : '';
+        // Handle both patterns: "59. title" and "6. 18- title" (chapter.video format)
+        const dualNumberMatch = file.name.match(/^(\d+)\.\s*(\d+)-/);
+        const id = dualNumberMatch ? dualNumberMatch[2] : (file.name.match(/^(\d+)\./)?.[1] || '');
 
         const titlePart = file.name
-          .replace(/^(\d+\.\s*)?/, '') 
-          .replace(/\(.*\)\.(mp4|pdf)$/i, '') 
+          .replace(/^(\d+\.\s*)?/, '')           // Remove first number prefix
+          .replace(/^(\d+-\s*)?/, '')              // Remove second number prefix if present (e.g., "18- ")
+          .replace(/\(.*\)\.(mp4|pdf)$/i, '')      // Remove duration and extension
           .trim();
 
         const duration = fileType === 'video' ? parseDuration(file.name) : '';
